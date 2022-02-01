@@ -19,6 +19,8 @@
 		68EB584727A981B00079BE01 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB584627A981B00079BE01 /* ApiHandler.swift */; };
 		68EB584E27A9822E0079BE01 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB584D27A9822E0079BE01 /* TrackCell.swift */; };
 		68EB585327A982840079BE01 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB585227A982840079BE01 /* Track.swift */; };
+		68EB585827A982CB0079BE01 /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB585727A982CB0079BE01 /* TracksViewController.swift */; };
+		68EB585D27A98A190079BE01 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB585C27A98A190079BE01 /* Results.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		68EB584627A981B00079BE01 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 		68EB584D27A9822E0079BE01 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		68EB585227A982840079BE01 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		68EB585727A982CB0079BE01 /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
+		68EB585C27A98A190079BE01 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				68EB585227A982840079BE01 /* Track.swift */,
+				68EB585C27A98A190079BE01 /* Results.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				68BD48EC27A79F3400B3E49A /* ViewController.swift */,
+				68EB585727A982CB0079BE01 /* TracksViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -330,7 +336,9 @@
 				68EB584E27A9822E0079BE01 /* TrackCell.swift in Sources */,
 				68BD48F327A79F3400B3E49A /* Gangireddi.xcdatamodeld in Sources */,
 				68EB584727A981B00079BE01 /* ApiHandler.swift in Sources */,
+				68EB585827A982CB0079BE01 /* TracksViewController.swift in Sources */,
 				68BD48E927A79F3400B3E49A /* AppDelegate.swift in Sources */,
+				68EB585D27A98A190079BE01 /* Results.swift in Sources */,
 				68BD48EB27A79F3400B3E49A /* SceneDelegate.swift in Sources */,
 				68EB585327A982840079BE01 /* Track.swift in Sources */,
 			);

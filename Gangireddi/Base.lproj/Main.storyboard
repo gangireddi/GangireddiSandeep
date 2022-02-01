@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8tv-Bj-vPD">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -37,6 +37,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="97" y="94"/>
+        </scene>
+        <!--Tracks View Controller-->
+        <scene sceneID="qdx-sc-ynB">
+            <objects>
+                <viewController id="8tv-Bj-vPD" customClass="TracksViewController" customModule="Gangireddi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PaR-Om-sW1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N3l-b1-IOT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="119" id="Izx-JV-ZPY" customClass="TrackCell" customModule="Gangireddi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Izx-JV-ZPY" id="UXi-au-02M">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-sL-TA7">
+                                                    <rect key="frame" x="10" y="20" width="355" height="48.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXw-FY-OLz">
+                                                    <rect key="frame" x="10" y="78.5" width="355" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FXw-FY-OLz" firstAttribute="leading" secondItem="lP0-sL-TA7" secondAttribute="leading" id="239-Ru-icE"/>
+                                                <constraint firstItem="FXw-FY-OLz" firstAttribute="trailing" secondItem="lP0-sL-TA7" secondAttribute="trailing" id="2hW-tu-JB8"/>
+                                                <constraint firstAttribute="trailing" secondItem="lP0-sL-TA7" secondAttribute="trailing" constant="10" id="3J7-L6-Ufu"/>
+                                                <constraint firstAttribute="bottom" secondItem="FXw-FY-OLz" secondAttribute="bottom" constant="20" id="DAi-WN-Cj5"/>
+                                                <constraint firstItem="FXw-FY-OLz" firstAttribute="top" secondItem="lP0-sL-TA7" secondAttribute="bottom" constant="10" id="aar-RD-eVE"/>
+                                                <constraint firstItem="lP0-sL-TA7" firstAttribute="top" secondItem="UXi-au-02M" secondAttribute="top" constant="20" id="ego-34-N5b"/>
+                                                <constraint firstItem="lP0-sL-TA7" firstAttribute="leading" secondItem="UXi-au-02M" secondAttribute="leading" constant="10" id="fjv-VU-cSt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subTitleLbl" destination="FXw-FY-OLz" id="LJ6-g7-bdZ"/>
+                                            <outlet property="titleLbl" destination="lP0-sL-TA7" id="InN-88-SXr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8tv-Bj-vPD" id="H22-q7-j9l"/>
+                                    <outlet property="delegate" destination="8tv-Bj-vPD" id="PJY-4j-i3G"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WLm-Ar-oeh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WLm-Ar-oeh" firstAttribute="trailing" secondItem="N3l-b1-IOT" secondAttribute="trailing" id="6oo-7G-W9F"/>
+                            <constraint firstItem="N3l-b1-IOT" firstAttribute="leading" secondItem="WLm-Ar-oeh" secondAttribute="leading" id="bs5-XL-ONT"/>
+                            <constraint firstItem="N3l-b1-IOT" firstAttribute="top" secondItem="WLm-Ar-oeh" secondAttribute="top" id="hPp-gl-GZd"/>
+                            <constraint firstItem="WLm-Ar-oeh" firstAttribute="bottom" secondItem="N3l-b1-IOT" secondAttribute="bottom" id="qfD-n4-t9u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tracksTableView" destination="N3l-b1-IOT" id="fHm-4i-8lN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tY-dK-uj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032.8" y="113.79310344827587"/>
         </scene>
     </scenes>
     <resources>
