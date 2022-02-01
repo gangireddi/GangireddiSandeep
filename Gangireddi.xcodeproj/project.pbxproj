@@ -101,6 +101,11 @@
 		68BD48E727A79F3400B3E49A /* Gangireddi */ = {
 			isa = PBXGroup;
 			children = (
+				68EB583527A980680079BE01 /* Resources */,
+				68EB583427A980610079BE01 /* Utilities */,
+				68EB583327A980590079BE01 /* Controller */,
+				68EB583227A9804F0079BE01 /* View */,
+				68EB583127A9803F0079BE01 /* Model */,
 				68BD48E827A79F3400B3E49A /* AppDelegate.swift */,
 				68BD48EA27A79F3400B3E49A /* SceneDelegate.swift */,
 				68BD48EC27A79F3400B3E49A /* ViewController.swift */,
@@ -129,6 +134,41 @@
 				68BD490F27A79F3500B3E49A /* Info.plist */,
 			);
 			path = GangireddiUITests;
+			sourceTree = "<group>";
+		};
+		68EB583127A9803F0079BE01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68EB583227A9804F0079BE01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68EB583327A980590079BE01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68EB583427A980610079BE01 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		68EB583527A980680079BE01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
