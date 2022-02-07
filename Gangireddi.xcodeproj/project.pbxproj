@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685666C227B1502100C1BC51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685666C127B1502100C1BC51 /* User.swift */; };
+		685666C727B1503D00C1BC51 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685666C627B1503D00C1BC51 /* Address.swift */; };
+		685666CC27B1504D00C1BC51 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685666CB27B1504D00C1BC51 /* Geo.swift */; };
+		6878D78627AA4C7F002B5B6A /* SampleScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6878D78527AA4C7F002B5B6A /* SampleScrollViewController.swift */; };
 		68BD48E927A79F3400B3E49A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD48E827A79F3400B3E49A /* AppDelegate.swift */; };
 		68BD48EB27A79F3400B3E49A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD48EA27A79F3400B3E49A /* SceneDelegate.swift */; };
 		68BD48ED27A79F3400B3E49A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD48EC27A79F3400B3E49A /* ViewController.swift */; };
@@ -16,6 +20,7 @@
 		68BD48F827A79F3400B3E49A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BD48F627A79F3400B3E49A /* LaunchScreen.storyboard */; };
 		68BD490327A79F3500B3E49A /* GangireddiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD490227A79F3500B3E49A /* GangireddiTests.swift */; };
 		68BD490E27A79F3500B3E49A /* GangireddiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD490D27A79F3500B3E49A /* GangireddiUITests.swift */; };
+		68C3389427AAB20F00553299 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C3389327AAB20F00553299 /* Download.swift */; };
 		68EB584727A981B00079BE01 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB584627A981B00079BE01 /* ApiHandler.swift */; };
 		68EB584E27A9822E0079BE01 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB584D27A9822E0079BE01 /* TrackCell.swift */; };
 		68EB585327A982840079BE01 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB585227A982840079BE01 /* Track.swift */; };
@@ -41,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		685666C127B1502100C1BC51 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		685666C627B1503D00C1BC51 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		685666CB27B1504D00C1BC51 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		6878D78527AA4C7F002B5B6A /* SampleScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleScrollViewController.swift; sourceTree = "<group>"; };
 		68BD48E527A79F3400B3E49A /* Gangireddi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gangireddi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BD48E827A79F3400B3E49A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68BD48EA27A79F3400B3E49A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +65,7 @@
 		68BD490927A79F3500B3E49A /* GangireddiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GangireddiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BD490D27A79F3500B3E49A /* GangireddiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GangireddiUITests.swift; sourceTree = "<group>"; };
 		68BD490F27A79F3500B3E49A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C3389327AAB20F00553299 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		68EB584627A981B00079BE01 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 		68EB584D27A9822E0079BE01 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		68EB585227A982840079BE01 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -150,6 +160,10 @@
 			children = (
 				68EB585227A982840079BE01 /* Track.swift */,
 				68EB585C27A98A190079BE01 /* Results.swift */,
+				68C3389327AAB20F00553299 /* Download.swift */,
+				685666C127B1502100C1BC51 /* User.swift */,
+				685666C627B1503D00C1BC51 /* Address.swift */,
+				685666CB27B1504D00C1BC51 /* Geo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +182,7 @@
 			children = (
 				68BD48EC27A79F3400B3E49A /* ViewController.swift */,
 				68EB585727A982CB0079BE01 /* TracksViewController.swift */,
+				6878D78527AA4C7F002B5B6A /* SampleScrollViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,15 +347,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6878D78627AA4C7F002B5B6A /* SampleScrollViewController.swift in Sources */,
 				68BD48ED27A79F3400B3E49A /* ViewController.swift in Sources */,
+				685666C727B1503D00C1BC51 /* Address.swift in Sources */,
+				68C3389427AAB20F00553299 /* Download.swift in Sources */,
 				68EB584E27A9822E0079BE01 /* TrackCell.swift in Sources */,
 				68BD48F327A79F3400B3E49A /* Gangireddi.xcdatamodeld in Sources */,
 				68EB584727A981B00079BE01 /* ApiHandler.swift in Sources */,
 				68EB585827A982CB0079BE01 /* TracksViewController.swift in Sources */,
 				68BD48E927A79F3400B3E49A /* AppDelegate.swift in Sources */,
+				685666C227B1502100C1BC51 /* User.swift in Sources */,
 				68EB585D27A98A190079BE01 /* Results.swift in Sources */,
 				68BD48EB27A79F3400B3E49A /* SceneDelegate.swift in Sources */,
 				68EB585327A982840079BE01 /* Track.swift in Sources */,
+				685666CC27B1504D00C1BC51 /* Geo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

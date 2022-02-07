@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class TracksViewController: UIViewController {
 
     @IBOutlet weak var tracksTableView: UITableView!
@@ -22,8 +20,14 @@ class TracksViewController: UIViewController {
             case .success(let results):
                 self?.tracksList = results.results
                 
-            case .failure(let failure):
-                print("error")
+            case .failure(let networkError):
+                print(networkError)
+                switch networkError {
+                case .inValidUrl(let msg):
+                    print(msg)
+                default:
+                    print("Error")
+                }
             }
             
             
@@ -47,5 +51,16 @@ extension TracksViewController: UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tracksList.count
+    }
+}
+
+//MARK: -----URLSessionDownloadDelegate method implementation-----
+
+extension TracksViewController: URLSessionDownloadDelegate {
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        
+    }
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        
     }
 }

@@ -15,4 +15,5 @@ struct Track: Decodable {
     let collectionName: String
     let trackName: String
     let collectionCensoredName: String
+    let previewUrl: String
 }
